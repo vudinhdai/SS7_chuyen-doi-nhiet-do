@@ -14,16 +14,16 @@
         this.setTemperature = function () {
             this.temperature = temperature;
         };
-        this.swapF = function () {
+        this.changeF = function () {
             return 9 * this.temperature / 5 + 32;
         };
-        this.swapK = function () {
+        this.changeK = function () {
             return this.temperature + 273.15;
         };
     };
     let temperature = new Temperature(20);
-    document.write(temperature.getTemperature() + " do C = " + temperature.swapF() + " do F " + "</br>");
-    document.write(temperature.getTemperature() + " do C = " + temperature.swapK() + " do K " + "</br>");
+    document.write(temperature.getTemperature() + " do C = " + temperature.changeF() + " do F " + "</br>");
+    document.write(temperature.getTemperature() + " do C = " + temperature.changeK() + " do K " + "</br>");
 </script>
 </body>
 </html>
